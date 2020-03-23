@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Views/_Preload.unity
+    guid: 80fa1b367dbbdb4418bba38edbacc284
+  - enabled: 1
+    path: Assets/Scenes/Views/MainMenuView.unity
+    guid: 7bae0084b8217bc44a8700574eb81ef5
+  - enabled: 1
+    path: Assets/Scenes/Views/HistoryView.unity
+    guid: 4e418b5dac1735144b495bfccdb82f2f
+  - enabled: 1
+    path: Assets/Scenes/Views/CameraView.unity
+    guid: f68c72cb642b31947891892aa77b5918
+  - enabled: 1
+    path: Assets/Scenes/Views/RestaurantView.unity
+    guid: 3826d5ab8eb6341498c312feeffc7b92
+  m_configObjects: {}

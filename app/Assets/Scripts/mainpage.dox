@@ -1,0 +1,87 @@
+/*! \mainpage ResDiary Menu Mobile App
+ *
+ *\section  a Setting up project in Unity 
+ * 
+ *Step 1 – Download and install unity hub from https://unity3d.com/get-unity/download 
+ *
+ *Step 2 – Download unity 2019.2.12, easiest way to get correct version is to go to this url: unityhub://2019.2
+ .12f1/b1a7e1fb4fa5 
+ *
+ *Make sure to select Android Build Support when installing. 
+ *
+ *Step 3 – clone gitlab repository 
+ *
+ *Step 4 – In Unity Hub > Projects select Add, navigate to the cloned directory, select the app folder 
+ *
+ *App will now appear in project list within unity hub. 
+ *
+ *Step 5 – Change the target platform from Current platform to Android in the drop down next to the app project. 
+ *
+ *Step 6 – open the app project 
+ *
+ *Step 7 – In the game view tab change the resolution to portrait 
+ *
+  *
+ *
+ *\section b  To run the app
+ *
+ *navigate to Assets>Scenes>Views in the project tab and double click _Preload scene. 
+ *
+ *The app must run from the _preload scene to initialize all the required components before starting. 
+ *
+ * 
+ *
+ *\section c Building app APK 
+ *
+ *To build the app go to File>Build Settings. 
+ *
+ *This is what you should see in the build settings: 
+ *
+  *
+ *
+ *Ensure that in the Scenes to build section _preload is at index 0, then press Build. 
+ *
+ *If you want to change any of the settings like the app’s name or logo press Player Settings. 
+ *
+ *From here you have access to all the publishing settings. 
+ *
+ *
+ *\section d Project folder structure 
+ *
+ *The way the project is structured all the scenes are within the Scenes/Views folder, each scene is a different view
+  within the app. 
+ *
+ *The code and tests are contained within the Scripts folder. 
+ *
+ *UI assets like fonts and images are in the UI folder. 
+ *
+ *Any prefabs which can be dragged and dropped onto a scene or instantiated through code are in the Prefab folder. 
+ *
+ *The Editor folder contains scripts which are only run when in the unity editor, mainly stores Vuforia scripts, a 
+ *script to build the app from CI and a script to generate asset bundles. 
+ *
+ *Every view scene contains a Canvas and EventSystem object, any scripts used in that scene are placed on the 
+ *EventSystem object or on buttons. The only exceptions are a GPS object on the CameraView which holds the 
+ *DeviceLocation script so that the location service is only running when scanning a logo, and the PermissionHandler 
+ *which is on the main menu so that the user cannot proceed further without granting the location permission. 
+ *
+ *The _preload scene contains a StateMachine and HistoryManager which keep track of the current state and history 
+ *respectively. It also contains an ARCamera, Cloud Recognition and CloudImageTarget which are used by the Vuforia 
+ *framework to initialize the device’s camera and perform image recognition on cloud images. All these objects 
+ *persist throughout the runtime of the app. 
+ *
+ *The history and restaurant views contain History View Update and Restaurant View Update scripts which handle 
+ *updating all UI elements like text boxes and images, as well as instantiating history and promotion panels when the
+  *respective scene is loaded. 
+ *
+ *\section e Running tests 
+ *
+ *To manually run the test suite, open the Test Runner window through the Window>General>Test Runner tab. In the test
+ *runner tab you will see a button for play mode and edit mode tests each which can be run by either choosing the 
+ *Run All option or selecting the tests you want to run and choosing Run Selected. 
+ *
+ *
+ *\section f Class design
+ *\image html https://cdn.discordapp.com/attachments/506910657539473439/690659970475229244/Mobile_App_UML_class_diagram_of_implementation_1.png width=1000
+ *
+*/

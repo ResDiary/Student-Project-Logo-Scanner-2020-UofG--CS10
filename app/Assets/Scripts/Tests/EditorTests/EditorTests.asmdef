@@ -1,0 +1,27 @@
+{
+    "name": "EditorTests",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "ScriptsAssembly",
+        "VuforiaEditorScripts",
+        "VuforiaPackageTests",
+        "VuforiaScripts"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Vuforia.UnityExtensions.dll",
+        "Vuforia.UnityExtensions.Editor.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": []
+}

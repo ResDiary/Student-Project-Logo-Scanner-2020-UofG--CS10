@@ -1,0 +1,24 @@
+{
+    "name": "PlayTests",
+    "references": [
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:bc72f8689eefa484699b4ed79b36553d",
+        "GUID:1e62516da8820481ca27afa854980a20",
+        "GUID:4aa734a563557450591d3fe58a62a120",
+        "GUID:95ae773a47e671d4991583ca4657df80"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Vuforia.UnityExtensions.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": []
+}

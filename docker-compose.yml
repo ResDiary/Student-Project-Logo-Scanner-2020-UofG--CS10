@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    middleware:
+        build: "./middleware/"
+        ports:
+            - "80:80"
+        env_file:
+            - '.env'
+    uploader:
+        build: "./uploader/"
+        ports:
+            - "8080:80"
+        env_file:
+            - '.env'   
